@@ -61,5 +61,5 @@ curl http://127.0.0.1:8000/tickets
 ## Team
 
 - **Eyad** – Team Leader, Backend (API, storage, integration)
-- **Aya** – (fill in role)
-- **Yassin** – (fill in role)
+- **Aya** – the part of the website that students use to report problems. ( A student can open the website and submit a ticket successfully )
+- **Yassin** – interface used to manage submitted support requests (An administrator can see tickets and update their statuses.)
