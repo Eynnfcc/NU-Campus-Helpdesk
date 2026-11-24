@@ -1,52 +1,28 @@
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Arial, sans-serif;
   background: #f2f4f8;
-  color: #222;
 }
 
 header {
   background: #1e3a8a;
   color: white;
   text-align: center;
-  padding: 30px 15px;
-}
-
-header h1 {
-  margin: 0 0 8px;
-}
-
-header p {
-  margin: 0;
-  opacity: 0.9;
-}
-
-main {
-  max-width: 600px;
-  margin: 30px auto;
-  padding: 0 15px;
+  padding: 25px;
 }
 
 form {
   background: white;
+  max-width: 500px;
+  margin: 30px auto;
   padding: 25px;
   border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-}
-
-form h2 {
-  margin-top: 0;
 }
 
 label {
   display: block;
   font-weight: bold;
   margin-top: 15px;
-  margin-bottom: 5px;
 }
 
 input,
@@ -54,77 +30,34 @@ select,
 textarea {
   width: 100%;
   padding: 10px;
-  font-size: 15px;
+  margin-top: 5px;
   border: 1px solid #ccc;
-  border-radius: 6px;
-  font-family: inherit;
-}
-
-input:focus,
-select:focus,
-textarea:focus {
-  outline: none;
-  border-color: #1e3a8a;
-}
-
-.invalid {
-  border-color: #d32f2f;
-}
-
-.error {
-  color: #d32f2f;
-  font-size: 13px;
+  border-radius: 5px;
+  box-sizing: border-box;
 }
 
 button {
   width: 100%;
   margin-top: 20px;
   padding: 12px;
-  font-size: 16px;
   background: #1e3a8a;
   color: white;
   border: none;
-  border-radius: 6px;
+  border-radius: 5px;
+  font-size: 16px;
   cursor: pointer;
 }
 
-button:hover {
-  background: #162c6b;
-}
-
-button:disabled {
-  background: #888;
-  cursor: not-allowed;
-}
-
-.message {
-  margin-top: 20px;
-  padding: 15px;
-  border-radius: 6px;
-}
-
 .success {
-  background: #e3f6e5;
-  color: #1b5e20;
-  border: 1px solid #a5d6a7;
+  color: green;
 }
 
-.failure {
-  background: #fdecea;
-  color: #b71c1c;
-  border: 1px solid #f5a9a3;
+.error {
+  color: red;
 }
 
-.hidden {
-  display: none;
-}
-
-@media (max-width: 480px) {
-  header {
-    padding: 20px 10px;
-  }
-
+@media (max-width: 600px) {
   form {
-    padding: 18px;
+    margin: 15px;
   }
 }

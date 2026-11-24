@@ -9,39 +9,34 @@
 <body>
   <header>
     <h1>NU Campus Helpdesk</h1>
-    <p>Something not working on campus? Tell us and we'll sort it out.</p>
+    <p>Have a problem on campus? Tell us about it.</p>
   </header>
 
-  <main>
-    <form id="ticket-form" novalidate>
-      <h2>Report a problem</h2>
+  <form id="ticket-form" novalidate>
+    <h2>Report a problem</h2>
 
-      <label for="student_name">Your name</label>
-      <input type="text" id="student_name" maxlength="100" placeholder="e.g. Ahmed Ali">
-      <small class="error" id="student_name-error"></small>
+    <label for="student_name">Your name *</label>
+    <input type="text" id="student_name">
 
-      <label for="title">Problem title</label>
-      <input type="text" id="title" maxlength="100" placeholder="e.g. WiFi not working">
-      <small class="error" id="title-error"></small>
+    <label for="title">Problem title *</label>
+    <input type="text" id="title">
 
-      <label for="category">Category</label>
-      <select id="category">
-        <option value="General">General</option>
-        <option value="IT">IT</option>
-        <option value="Facilities">Facilities</option>
-        <option value="Academic">Academic</option>
-        <option value="Finance">Finance</option>
-      </select>
+    <label for="category">Category</label>
+    <select id="category">
+      <option>General</option>
+      <option>IT</option>
+      <option>Facilities</option>
+      <option>Academic</option>
+      <option>Finance</option>
+    </select>
 
-      <label for="description">Description</label>
-      <textarea id="description" rows="5" maxlength="1000" placeholder="What happened, where, and since when?"></textarea>
-      <small class="error" id="description-error"></small>
+    <label for="description">Description *</label>
+    <textarea id="description" rows="5"></textarea>
 
-      <button type="submit" id="submit-btn">Submit ticket</button>
-    </form>
+    <button type="submit">Submit ticket</button>
 
-    <div id="message" class="message hidden"></div>
-  </main>
+    <p id="message"></p>
+  </form>
 
   <script src="student.js"></script>
 </body>
