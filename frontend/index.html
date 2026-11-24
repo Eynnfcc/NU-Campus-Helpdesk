@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NU Campus Helpdesk</title>
+  <link rel="stylesheet" href="student.css">
+</head>
+<body>
+  <header>
+    <h1>NU Campus Helpdesk</h1>
+    <p>Have a problem on campus? Tell us about it.</p>
+  </header>
+
+  <form id="ticket-form" novalidate>
+    <h2>Report a problem</h2>
+
+    <label for="student_name">Your name *</label>
+    <input type="text" id="student_name" maxlength="100">
+
+    <label for="title">Problem title *</label>
+    <input type="text" id="title" maxlength="100">
+
+    <label for="category">Category</label>
+    <select id="category">
+      <option>General</option>
+      <option>IT</option>
+      <option>Facilities</option>
+      <option>Academic</option>
+      <option>Finance</option>
+    </select>
+
+    <label for="description">Description *</label>
+    <textarea id="description" rows="5" maxlength="1000"></textarea>
+
+    <button type="submit">Submit ticket</button>
+
+    <p id="message"></p>
+  </form>
+
+  <script src="student.js"></script>
+</body>
+</html>
