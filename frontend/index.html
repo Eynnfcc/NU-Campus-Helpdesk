@@ -16,10 +16,10 @@
     <h2>Report a problem</h2>
 
     <label for="student_name">Your name *</label>
-    <input type="text" id="student_name">
+    <input type="text" id="student_name" maxlength="100">
 
     <label for="title">Problem title *</label>
-    <input type="text" id="title">
+    <input type="text" id="title" maxlength="100">
 
     <label for="category">Category</label>
     <select id="category">
@@ -31,7 +31,7 @@
     </select>
 
     <label for="description">Description *</label>
-    <textarea id="description" rows="5"></textarea>
+    <textarea id="description" rows="5" maxlength="1000"></textarea>
 
     <button type="submit">Submit ticket</button>
 
